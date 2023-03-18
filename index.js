@@ -3,21 +3,21 @@ const projetos = [
 		nome: "link in bio",
 		descrição: "",
 		imagem:
-			"https://raw.githubusercontent.com/augusto404/portfolio/main/link-in-bio.png",
+			"https://raw.githubusercontent.com/augusto404/portfolio/main/img/link-in-bio.png",
 		link: "https://codepen.io/augusto404/full/XWPEBzX"
 	},
 	{
 		nome: "cartão de crédito com animação",
 		descrição: "",
 		imagem:
-			"https://raw.githubusercontent.com/augusto404/portfolio/main/credit-card.png",
+			"https://raw.githubusercontent.com/augusto404/portfolio/main/img/credit-card.png",
 		link: "https://codepen.io/augusto404/full/abaJLpQ"
 	},
 	{
 		nome: "formulário de inscrição para newsletter de astronomia",
 		descrição: "",
 		imagem:
-			"https://raw.githubusercontent.com/augusto404/portfolio/main/newsletter-astronomia.png",
+			"https://raw.githubusercontent.com/augusto404/portfolio/main/img/newsletter-astronomia.png",
 		link: "https://augusto404.github.io/FormularioNewsletter"
 	}
 ];
