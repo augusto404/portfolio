@@ -1,5 +1,11 @@
 const projetos = [
 	{
+		nome: "timer pomodoro e relógio digital",
+		descrição: "",
+		imagem: "https://raw.githubusercontent.com/augusto404/portfolio/main/img/pomodoro%20timer.png",
+		link: "https://codepen.io/augusto404/full/ZEMrKMg"
+	},
+	{
 		nome: "link in bio",
 		descrição: "",
 		imagem:
