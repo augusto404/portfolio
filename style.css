@@ -88,7 +88,7 @@ main .apresentacao p {
 	background: olive;
 	color: beige;
 	padding: 20px;
-	max-width: 600px;
+	max-width: 620px;
 	margin: auto;
 
 	transition: var(--transicao-animacoes);
@@ -107,8 +107,8 @@ main .projetos {
 	transition: var(--transicao-animacoes);
 }
 .projetos section {
-	height: 150px;
-	width: 200px;
+	height: 200px;
+	width: 300px;
 	border: var(--borda);
 	box-shadow: var(--borda-da-caixa);
 
@@ -116,7 +116,7 @@ main .projetos {
 		filter var(--transicao-animacoes);
 }
 .projetos section:hover {
-	filter: brightness(1.1);
+	filter: brightness(1.2);
 }
 .projetos section:active {
 	filter: invert(30%);
