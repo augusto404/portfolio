@@ -1,5 +1,12 @@
 const projetos = [
 	{
+		nome: "página de produto",
+		descrição: "",
+		imagem:
+			"https://raw.githubusercontent.com/augusto404/portfolio/main/img/pagina-de-produto.png",
+		link: "https://codepen.io/augusto404/full/KKxbrMw"
+	},
+	{
 		nome: "página de login e cadastro",
 		descrição: "",
 		imagem:
