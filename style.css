@@ -45,9 +45,6 @@ section h2 {
 
 .mudar-tema {
 	padding: 4px 5px;
-	background: sandybrown;
-	box-shadow: var(--borda-da-caixa);
-	border: var(--borda);
 
 	position: absolute;
 	top: 15px;
@@ -59,12 +56,8 @@ section h2 {
 
 	transition: var(--animacao-clique);
 }
-.mudar-tema:active {
-	filter: invert(30%);
-}
 .mudar-tema .tema-dia {
 	color: darkgray;
-	display: none;
 }
 .mudar-tema .tema-noite {
 	color: var(--cor-textos);
@@ -84,14 +77,11 @@ main .apresentacao {
 main .apresentacao p {
 	font-size: 14px;
 	border: var(--borda);
-	box-shadow: var(--borda-da-caixa);
 	background: olive;
 	color: beige;
 	padding: 20px;
 	max-width: 620px;
 	margin: auto;
-
-	transition: var(--transicao-animacoes);
 }
 
 main .projetos {
@@ -103,23 +93,15 @@ main .projetos {
 	margin: auto;
 	margin-bottom: 40px;
 	font-size: 18px;
+}
+.projetos section {
+	max-height: 200px;
+	width: 400px;
 
 	transition: var(--transicao-animacoes);
 }
-.projetos section {
-	height: 200px;
-	width: 300px;
-	border: var(--borda);
-	box-shadow: var(--borda-da-caixa);
-
-	transition: box-shadow var(--animacao-clique),
-		filter var(--transicao-animacoes);
-}
 .projetos section:hover {
-	filter: brightness(1.2);
-}
-.projetos section:active {
-	filter: invert(30%);
+	filter: brightness(1.1);
 }
 .projetos img {
 	height: 100%;
