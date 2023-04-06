@@ -18,7 +18,7 @@ const projetos = [
 	{
 		nome: "Tela de login e cadastro no estilo mobile first",
 		descrição:
-			'Os temas mudam automaticamente a cada cinco segundos. Os botões de "Login" e "Criar Conta" são clicáveis e exibem uma mensagem temporária que teoricamente ficaria presente no tempo entre o carregamento da página atual para a próxima.',
+			'Os temas mudam automaticamente a cada cinco segundos. Os botões de Login e Criar Conta são clicáveis e exibem uma mensagem temporária que teoricamente ficaria presente no tempo entre o carregamento da página atual para a próxima.',
 		imagem:
 			"https://raw.githubusercontent.com/augusto404/portfolio/main/img/login-e-cadastro.png",
 		link: "https://codepen.io/augusto404/full/oNPQROp"
