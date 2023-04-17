@@ -1,111 +1,170 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;400;500;600;700&display=swap');
 
 :root {
-	--borda: 2px solid black;
-	--borda-da-caixa: 3px 3px black;
-	--background: #cbb798;
-	--cor-textos: #51524b;
-	--cor-highlights: #8c2c16;
 	--transicao-animacoes: 0.3s;
 	--animacao-clique: 0.2s;
+
+	/* paleta de cores (Solarized theme) */
+	--background001: #002b36;
+	--background002: #073642;
+	--background003: #eee8d5;
+	--background004: #fdf6e3;
+	--conteudo001: #93a1a1;
+	--conteudo002: #839496;
+	--conteudo003: #657b83;
+	--conteudo004: #586e75;
+	--destaques001: #d33682;
+	--destaques002: #b58900;
+	--destaques003: #cb4b16;
+	--destaques004: #2aa198;
 }
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: "Source Code Pro", monospace;
-	color: var(--cor-textos);
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 1rem;
 }
 
 body {
-	background: var(--background);
+	color: var(--conteudo002);
+	background-color: var(--background001);
 	transition: var(--transicao-animacoes);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
 }
 
 header {
-	margin: 20px;
-}
-header h1 {
-	margin: auto;
-}
-header h1,
-section h2 {
-	border-bottom: var(--borda);
-	width: fit-content;
-	padding: 5px 10px;
-}
-section h2 {
-	margin-bottom: 20px;
+	background-color: var(--background002);
+	padding: 20px 0px;
+	width: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	position: relative;
 }
 
+/* botão de mudar o tema */
 .material-symbols-rounded {
 	font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
-
 .mudar-tema {
-	padding: 4px 5px;
-
+	background-color: var(--background004);
+	border: none;
+	border-radius: 8px;
+	padding: 5px;
+	
 	position: absolute;
-	top: 15px;
-	right: 15px;
-
+	right: 10px;
+	top: 10px;
+	
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	transition: var(--animacao-clique);
 }
-.mudar-tema .tema-dia {
-	color: darkgray;
+.mudar-tema	span {
+	color: var(--destaques002);
 }
-.mudar-tema .tema-noite {
-	color: var(--cor-textos);
+.mudar-tema:hover {
+	padding: 7px;
+}
+.mudar-tema:active {
+	filter: brightness(.8);
+}
+
+/* título e texto de apresentação */
+.apresentacao {
+	text-align: center;
+	width: 50%;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+.apresentacao h1 {
+	font-size: 2rem;
+	color: var(--conteudo001);
+}
+.apresentacao p {
+	font-weight: 300;
 }
 
 main {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 20px;
+}
+.projeto {
+	background-color: var(--background003);
+	padding: 10px;
+	border-radius: 15px;
+
 	display: flex;
 	flex-direction: column;
-	padding: 0px 40px;
-	max-width: 1000px;
-	margin: auto;
-}
-
-main .apresentacao {
-	margin-bottom: 30px;
-}
-main .apresentacao p {
-	font-size: 14px;
-	border: var(--borda);
-	background: olive;
-	color: beige;
-	padding: 20px;
-	max-width: 620px;
-	margin: auto;
-}
-
-main .projetos {
-	display: flex;
+	align-items: center;
 	justify-content: center;
-	gap: 20px;
-	flex-wrap: wrap;
-	max-width: 900px;
-	margin: auto;
-	margin-bottom: 40px;
-	font-size: 18px;
+	gap: 5px;
 }
-.projetos section {
-	max-height: 200px;
-	width: 400px;
-
-	transition: var(--transicao-animacoes);
-}
-.projetos section:hover {
-	filter: brightness(1.1);
-}
-.projetos img {
-	height: 100%;
-	width: 100%;
+.projeto img {
+	height: 150px;
+	width: 250px;
+	border-radius: 10px;
 	object-fit: cover;
 	object-position: center center;
+}
+.projeto h2 {
+	color: var(--destaques003);
+}
+.projeto .botoes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.projeto .botoes a {
+	display: block;
+	color: var(--destaques004);
+	padding: 10px 15px;
+	border: 1.5px solid transparent;
+	border-radius: 10px;
+	text-align: center;
+	font-size: .8rem;
+	font-weight: 400;
+	transition: var(--animacao-clique);
+}
+.projeto .botoes a:hover {
+	text-decoration: none;
+	border: 1.5px solid var(--destaques004);
+}
+
+footer {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+footer ul li a {
+	color: var(--conteudo002);
+	border-radius: 10px;
+	padding: 10px 15px;
+	font-size: .8rem;
+	font-weight: 500;
+	text-decoration: none;
+}
+footer ul li a:hover {
+	text-decoration: underline;
 }
