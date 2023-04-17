@@ -4,6 +4,7 @@
 Esse projeto foi feito para agrupar os outros projetos que são hospedados em diferentes plataformas (Codepen, Replit e aqui no GitHub), mantendo tudo organizando num único lugar para indexa-los e ordenando-os do mais recente para o mais antigo.
 
 ## Detalhes
+- O site é responsivo para desktop e dispositivos móveis;
 - No canto superior direito há um botão para mudar os temas;
 - Os botões abaixo das thumbnails dos projetos direcionam para a documentação e para o resultado final;
 - No footer estão presentes os links úteis sobre mim.
